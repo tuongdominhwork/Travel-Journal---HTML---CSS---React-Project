@@ -1,53 +1,79 @@
 # Travel Journal
 
-A simple React + Vite app that renders travel journal entries as reusable cards.
+A beautiful and interactive React application for documenting and sharing travel experiences. Built with modern web technologies, this app showcases travel destinations with images, descriptions, and location maps.
 
-## Features
+## 📋 Features
 
-- Reusable `Header` and `Entry` components
-- Data-driven rendering from `data.js`
-- External Google Maps links per location
-- Clean, responsive-friendly card-style layout
+- **Reusable Components**: Modular `Header` and `Entry` components for easy maintenance
+- **Data-Driven**: Entries are powered by a centralized `data.js` file for easy updates
+- **Google Maps Integration**: Quick links to view each destination on Google Maps
+- **Responsive Design**: Clean, card-based layout that works across devices
+- **Dynamic Entry Cards**: Each entry displays location details, dates, images, and descriptions
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- React
-- Vite
-- JavaScript (JSX)
-- CSS
+- **React** (v19.0.0-rc) - Modern UI library
+- **Vite** - Fast build tool and dev server
+- **JavaScript (JSX)** - Component markup language
+- **CSS** - Styling and layout
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js (v18+ recommended)
-- npm
+- npm or yarn
 
 ### Installation
 
+1. Clone the repository:
+```bash
+git clone https://github.com/tuongdominhwork/Travel-Journal---HTML---CSS---React-Project.git
+cd Travel\ Journal
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
 ### Run in Development
 
+Start the development server:
 ```bash
 npm run dev
 ```
 
-The app starts on Vite's local dev server (usually `http://localhost:5173`).
+The app will be available at `http://localhost:5173` (or your Vite default port).
 
-## Available Scripts
+## 📦 Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run start` - Alias for dev server
-- `npm run build` - Create production build
+- `npm run dev` - Start development server with hot module reloading
+- `npm run start` - Alias for `dev`
+- `npm run build` - Create optimized production build
 - `npm run preview` - Preview production build locally
 
-## Project Structure
+## 📁 Project Structure
 
-```text
+```
 Travel Journal/
+├── src/
+│   ├── main.jsx              # React app entry point
+│   ├── App.jsx               # Main App component
+│   ├── App.css               # App styles
+│   ├── index.css             # Global styles
+│   └── assets/               # Static assets
+├── components/
+│   ├── Header.jsx            # Header component with logo and title
+│   └── Entry.jsx             # Individual entry card component
+├── images/
+│   ├── globe.png             # Header globe icon
+│   └── marker.png            # Map marker icon for entries
+├── data.js                   # Travel entries data
+├── package.json              # Project dependencies
+├── vite.config.js            # Vite configuration
+├── index.html                # HTML template
+└── README.md                 # This file
 ├── App.jsx                  # App root: maps data into Entry components
 ├── index.jsx                # React entry point
 ├── index.css                # Global/component styles
